@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({super.key, this.title}) : super(key: key);
 
   final String title;
 
@@ -47,7 +47,7 @@ class TestWidget extends StatelessWidget {
       Colors.blueAccent,
       Colors.greenAccent
     ];
-    return new TransformerPageView(
+    return TransformerPageView(
         loop: true,
         transformer: new AccordionTransformer(),
         itemBuilder: (BuildContext context, int index) {
